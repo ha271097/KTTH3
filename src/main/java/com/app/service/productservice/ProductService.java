@@ -34,7 +34,7 @@ public class ProductService implements IProductService {
                 int amount = resultSet.getInt("amount");
                 String color = resultSet.getString("color");
                 String description = resultSet.getString("description");
-                int category_id = resultSet.getInt("category_id");
+                int category_id = resultSet.getInt("c_id");
                 Category category = categoryService.findById(category_id);
                 Product product = new Product(id,name,price,amount,color,description,category);
                 productList.add(product);

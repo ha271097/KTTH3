@@ -96,7 +96,6 @@ public class ProductServlet extends HttpServlet {
     }
 
     private void deleteProduct(HttpServletRequest req, HttpServletResponse resp) {
-
         try {
             int id = Integer.parseInt(req.getParameter("id"));
             productService.delete(id);
