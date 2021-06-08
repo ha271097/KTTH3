@@ -13,6 +13,11 @@
 </head>
 <body>
     <a href="/products?action=create">ADD Product</a>
+    <from >
+        <input type="text" value="Nhập tên sản phẩm">
+        <button type="submit" value="">Tìm kiếm</button>
+    </from>
+
     <table border="1">
         <tr>
             <th scope="col">Mã sản phẩm</th>
@@ -34,10 +39,10 @@
                 <td>${p.description}</td>
                 <td>${p.category.name}</td>
                 <td>
-                    <a href="/products?action=edit&id=${p.id}">Sửa</a>
+                    <a href="/home?action=edit&id=${p.id}">Sửa</a>
                 </td>
                 <td>
-                    <a href="/products?action=delete&id=${p.id}">Xoá</a>
+                    <a href="/home?action=delete&id=${p.id}">Xoá</a>
                 </td>
             </tr>
         </c:forEach>
